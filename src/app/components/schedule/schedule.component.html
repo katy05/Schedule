@@ -4,6 +4,7 @@
     <app-group-day
       *ngFor="let group of numberOfGroups"
       [groupSchedule]="schedule[number][group]"
+      (openForm)="sendOpenForm($event)"
     ></app-group-day>
   </div>
 </div>

@@ -14,6 +14,7 @@ import { GroupDayComponent } from './components/group-day/group-day.component';
 import { GroupComponent } from './components/group/group.component';
 import { SubgroupComponent } from './components/subgroup/subgroup.component';
 import { EditFormComponent } from './components/edit-form/edit-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,13 +29,10 @@ import { EditFormComponent } from './components/edit-form/edit-form.component';
     GroupDayComponent,
     GroupComponent,
     SubgroupComponent,
-    EditFormComponent
+    EditFormComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

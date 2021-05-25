@@ -1,1 +1,5 @@
-<app-class *ngFor="let class of numberOfClasses" [classInfo]="groupSchedule[class]"></app-class>
+<app-class
+  *ngFor="let class of numberOfClasses"
+  [classInfo]="groupSchedule[class]"
+  (openForm)="sendOpenForm($event)"
+></app-class>

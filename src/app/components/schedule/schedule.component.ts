@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-schedule',
@@ -8,6 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ScheduleComponent implements OnInit {
   @Input()
   schedule: any;
+  @Output()
+  openForm = new EventEmitter();
+
   numberOfDays: number[] = [1, 2];
   numberOfGroups: string[] = [];
 
@@ -15,5 +18,9 @@ export class ScheduleComponent implements OnInit {
 
   ngOnInit(): void {
     this.numberOfGroups = Object.keys(this.schedule['1']);
+  }
+
+  sendOpenForm(event: any): void {
+    this.openForm.emit(event);
   }
 }

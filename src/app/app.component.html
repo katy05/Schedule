@@ -1,20 +1,26 @@
 <div>
-    <div class="top-base">
-        <div class="sticky-left">
-            <app-corner-with-squares></app-corner-with-squares>
-        </div>
-        <div>
-            <app-course></app-course>
-            <app-group></app-group>
-            <!-- <app-subgroup></app-subgroup> -->
-        </div>
+  <div class="top-base">
+    <div class="sticky-left">
+      <app-corner-with-squares></app-corner-with-squares>
     </div>
-    <div class="content">
-        <div class="sticky-left">
-            <app-left-base></app-left-base>
-        </div>
+    <div>
+      <app-course></app-course>
+      <app-group></app-group>
+      <!-- <app-subgroup></app-subgroup> -->
+    </div>
+  </div>
+  <div class="content">
+    <div class="sticky-left">
+      <app-left-base></app-left-base>
+    </div>
 
-        <app-schedule [schedule]="schedule"></app-schedule>
-        <app-edit-form></app-edit-form>
-    </div>
+    <app-schedule
+      [schedule]="schedule"
+      (openForm)="openForm($event)"
+    ></app-schedule>
+    <app-edit-form
+      *ngIf="showEditClassForm"
+      [formValue]="editableClass"
+    ></app-edit-form>
+  </div>
 </div>
