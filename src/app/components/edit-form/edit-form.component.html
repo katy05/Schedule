@@ -1,13 +1,32 @@
 <form class="edit-class" [formGroup]="formGroup" (ngSubmit)="onFormSubmit()">
-  <div class="cl-grey m-b-4">Название предмета</div>
-  <select
-    class="lessons m-b-40"
-    placeholder="Выберите предмет..."
-    [value]="formValue.name"
-    formControlName="name"
-  >
-    <option value="Алгебра">Алгебра</option>
+  <div class="cl-grey m-b-4">Название предмета:</div>
+  <select class="lessons m-b-40" placeholder="Выберите предмет..." [value]="formValue.name" formControlName="name">
+    <option value="   " disabled>Выберите предмет</option>
     <option value="МИИ">МИИ</option>
+    <option value="Компьютерная графика">Компьютерная графика</option>
+    <option value="Операционные сети">Операционные сети</option>
+    <option value="Архитект. комп.">Архитект. комп.</option>
   </select>
+
+
+  <div class="cl-grey m-b-4">Преподаватель:</div>
+  <select class="lessons m-b-40" placeholder="Выберите преподавателя..." [value]="formValue.teacher" formControlName="teacher">
+    <option value="   " disabled>Выберите преподавателя</option>
+    <option value="Никитин А.И.">Никитин А.И.</option>
+    <option value="Новый В.В.">Новый В.В.</option>
+    <option value="Корчевская Е.А.">Корчевская Е.А.</option>
+    <option value="Ермоченко С.А.">Ермоченко С.А.</option>
+  </select>
+
+  <div class="cl-grey m-b-4">Аудитория:</div>
+  <select class="lessons m-b-40" placeholder="Выберите аудиторию..." [value]="formValue.room" formControlName="room">
+    <option value="   " disabled>Выберите аудиторию</option>
+    <option value="306">306</option>
+    <option value="308">308</option>
+    <option value="206">206</option>
+    <option value="313">313</option>
+  </select>
+
+
   <button type="submit">edit</button>
 </form>
