@@ -26,11 +26,15 @@ export class EditFormComponent implements OnInit {
       name: '',
     });
 
-    this.formGroup.patchValue(this.formValue);
+    this.patchFormValues(this.formValue);
   }
 
   onFormSubmit(): void {
     console.log(this.formGroup.value);
     this.formValue.name = this.formGroup.value.name;
+  }
+
+  patchFormValues(value: any) {
+    this.formGroup.patchValue(value);
   }
 }

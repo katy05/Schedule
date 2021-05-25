@@ -19,6 +19,7 @@
       (openForm)="openForm($event)"
     ></app-schedule>
     <app-edit-form
+      #editForm
       *ngIf="showEditClassForm"
       [formValue]="editableClass"
     ></app-edit-form>

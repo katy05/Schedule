@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { EditFormComponent } from './components/edit-form/edit-form.component';
 
 @Component({
   selector: 'app-root',
@@ -84,18 +85,20 @@ export class AppComponent {
     },
   };
 
-  // ngOnInit(): void {
-  //   const days = 6;
-  //   const groups = 12;
+  @ViewChild('editForm')
+  editForm!: EditFormComponent;
 
-  //   for(let i = 0; i < 6; i++){
+  ngOnInit(): void {
+    const days = 6;
+    const groups = 12;
 
-  //   }
-  // }
+    for (let i = 0; i < 6; i++) {}
+  }
 
   openForm(event: any): void {
     console.log('event', event);
     this.editableClass = event;
     this.showEditClassForm = !this.showEditClassForm;
+    this.editForm.patchFormValues(event);
   }
 }
