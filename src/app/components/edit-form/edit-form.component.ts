@@ -39,6 +39,8 @@ export class EditFormComponent implements OnInit {
     this.formValue.name = this.formGroup.value.name;
     this.formValue.teacher = this.formGroup.value.teacher;
     this.formValue.room = this.formGroup.value.room;
+
+    this.closeForm.emit();
   }
 
   patchFormValues(value: any) {

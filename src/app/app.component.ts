@@ -98,7 +98,7 @@ export class AppComponent {
   openForm(event: any): void {
     console.log('event', event);
     this.editableClass = event;
-    this.showEditClassForm = !this.showEditClassForm;
+    this.showEditClassForm = true;
     this.editForm.patchFormValues(event);
   }
 }

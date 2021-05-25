@@ -22,6 +22,7 @@
       #editForm
       *ngIf="showEditClassForm"
       [formValue]="editableClass"
+      (closeForm)="showEditClassForm = false"
     ></app-edit-form>
   </div>
 </div>
