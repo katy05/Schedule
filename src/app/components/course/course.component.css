@@ -1,0 +1,20 @@
+.number-of-course {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 300;
+    width: 906px !important;
+    color: #1572E8;
+    background-color: #dbeafc;
+    border-right: 3px solid white;
+
+}
+
+.all-course{
+    display: flex;
+}

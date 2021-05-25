@@ -1,0 +1,19 @@
+.number-of-group {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 300;
+    width: 300px !important;
+    color: #1572E8;
+    background-color: #c5dcfa;
+    border-right: 3px solid white;
+}
+
+.all-group{
+    display: flex;
+}

@@ -1,0 +1,11 @@
+.left-base {
+    position: sticky;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 88.98px;
+    height: auto;
+    margin-top: -136px;
+    z-index: 8;
+}

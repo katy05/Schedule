@@ -1,0 +1,17 @@
+.name-of-days {
+    background-color: rgb(199, 222, 250);
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 303px !important;
+    width: 42px !important;
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1572e8;
+    transform: rotate(180deg);
+    border-top: 3px white solid;
+    z-index: 5;
+}

@@ -1,0 +1,7 @@
+<!-- <p>schedule works!</p> -->
+<div *ngFor="let number of numberOfDays">
+    <div style="display: flex">
+        <app-group-day *ngFor="let group of numberOfGroups" [groupSchedule]="schedule[number][group]"></app-group-day>
+
+    </div>
+</div>

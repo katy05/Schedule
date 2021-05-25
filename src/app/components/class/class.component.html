@@ -1,0 +1,13 @@
+<div class="cell">
+    <div *ngFor="let subclass of classInfo; let i = index" (click)=editClass(subclass)>
+        <img src="../../../assets/img/add.png" (click)=addSubclass() class="image">
+        {{subclass.name }}
+        {{subclass.teacher}}
+        {{subclass.room}}
+        {{subclass.type}}
+        <img src="../../../assets/img/remove.png" (click)=removeSubclass(i) class="image">
+        <!-- <span (click)=removeSubclass(i) style="font-size: 15px;">-</span> -->
+
+    </div>
+</div>
+

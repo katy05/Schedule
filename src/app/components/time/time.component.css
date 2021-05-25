@@ -1,0 +1,15 @@
+.time {
+    background: #e7f1fd !important;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 48px;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #1572E8;
+    border-bottom: 3px rgba(255, 255, 255, 0.55) solid;
+}
+
